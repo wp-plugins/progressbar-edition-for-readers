@@ -32,6 +32,10 @@ Upload the wp-progressbar plugin to your blog and activate it.
 
 == Changelog == 
 
+= 0.3 = 
+
+* Fixed: Devision by zero.
+
 = 0.2 =
 
 * Added: The appearance of the progress bar can be changed in the options.
