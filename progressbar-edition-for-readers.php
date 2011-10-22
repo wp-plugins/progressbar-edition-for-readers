@@ -1,8 +1,8 @@
 ﻿<?php
 /*
 	Plugin Name: Progressbar (Edition for Readers)
-	Plugin URI: http://www.paperthin.de/wp-progressbar/
-	Description: This plugin shows/indicates progress that has been made on books.
+	Plugin URI: http://wordpress.org/extend/plugins/progressbar-edition-for-readers/
+	Description: This plugin indicates progress made on books.
 	Version: 0.2
 	Author: Janine Große-Beck
 	Author URI: http://www.paperthin.de
