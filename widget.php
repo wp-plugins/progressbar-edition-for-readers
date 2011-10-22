@@ -29,11 +29,11 @@
             </p>
             <p style="text-align: center;">
             	<div id="progressbar">
-                	<div style="width:<?php echo(($progress/$max)*100); ?>%"></div>
+                	<div style="width:<?php if($progress > 0) { echo(($progress/$max)*100); } else { echo(0); } ?>%"></div>
                 </div>   
             </p>
             <p style="text-align: center;">
-				<?php echo $progress; ?> von <?php echo $max; ?> Seiten (<?php echo round(($progress/$max)*100,2); ?>%)
+				<?php echo $progress; ?> von <?php echo $max; ?> Seiten (<?php if($progress > 0) { echo(($progress/$max)*100); } else { echo(0); } ?>%)
             </p>
             <?php echo $after_widget;
 		}
