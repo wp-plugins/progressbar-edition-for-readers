@@ -33,7 +33,7 @@
                 </div>   
             </p>
             <p style="text-align: center;">
-				<?php echo $progress; ?> von <?php echo $max; ?> Seiten (<?php if($progress > 0) { echo(($progress/$max)*100); } else { echo(0); } ?>%)
+				<?php echo $progress; ?> von <?php echo $max; ?> Seiten (<?php if($progress > 0) { echo(round(($progress/$max)*100,2)); } else { echo(0); } ?>%)
             </p>
             <?php echo $after_widget;
 		}
