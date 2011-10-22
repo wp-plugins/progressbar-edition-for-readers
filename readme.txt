@@ -39,6 +39,7 @@ Upload the wp-progressbar plugin to your blog and activate it.
 * Improved: Progress can be saved in the widget options.
 * Improved: The ne data model is completely free of redundancy.
 * Fixed: Incorrect entries will result in a prompt asking for correction.
+* Fixed: The encoding is set to UTF-8 without BOM.
 
 = 0.1 = 
 
