@@ -44,3 +44,9 @@ Upload the wp-progressbar plugin to your blog and activate it.
 = 0.1 = 
 
 * Added: The progress is stored in a database table.
+
+== Frequently Asked Questions ==
+
+= How to change the appearance of the cover ? =
+
+Styling such as width, height,padding, background-color, etc., of the cover can be customized by adding the class .thumb in your css-file.
