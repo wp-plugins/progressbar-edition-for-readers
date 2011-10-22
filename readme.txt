@@ -1,4 +1,4 @@
-﻿=== Progressbar (Edition for Readers) ===
+=== Progressbar (Edition for Readers) ===
 Contributors: Paperthin.de
 Tags: progressbar, progress, tracker, bar, goal, graph, meter
 Requires at least: 3.0

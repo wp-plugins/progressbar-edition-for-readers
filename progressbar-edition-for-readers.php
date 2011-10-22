@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 	Plugin Name: Progressbar (Edition for Readers)
 	Plugin URI: http://wordpress.org/extend/plugins/progressbar-edition-for-readers/
@@ -26,14 +26,11 @@
 	function ProgressbarCreateMenu() {		
 		add_options_page('Progressbar', 'Progressbar', 10, basename(__FILE__), 'ProgressbarSettings');
 	}	
-	
 	function ProgressbarSettings(){
 		require('settings.php');
 	}
-	
 	require('widget.php'); 
-	
 	add_action('admin_menu','ProgressbarCreateMenu',10);
 	add_action('widgets_init',create_function('','register_widget("ProgressbarWidget");'));	
 	wp_register_sidebar_widget('progressbar','Progressbar','ProgressbarCreateSidebarWidget',array('description' => 'Description of what your widget does'));
-php?>
+?>
