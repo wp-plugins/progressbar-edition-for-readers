@@ -20,7 +20,7 @@
 	} 
 	require('_config.php');
 	require('_style.php');
-?>
+php?>
 <div class="wrap">
     
         <div id="icon-options-general" class="icon32"><br /></div>

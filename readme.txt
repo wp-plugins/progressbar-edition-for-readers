@@ -14,7 +14,7 @@ This plugin indicates progress made on books.
 
 Important: Your theme needs to support widgets to show the progressbar in the sidebar/widget area.
 
-Mayor features in version 0.2 include:
+Mayor features in wp-progressbar 0.2 include:
 
 * Added: The appearance of the progress bar can be changed in the options.
 * Improved: Progress can be saved in the widget options.
