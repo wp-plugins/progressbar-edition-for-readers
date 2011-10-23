@@ -27,7 +27,7 @@
             <p style="text-align: center;">
             	<b><?php echo $book; ?> von <?php echo $author; ?></b>
             </p>
-            <p style="text-align: center;">
+            <p style="text-align: center; margin: 0 auto;">
             	<div id="progressbar">
                 	<div style="width:<?php if($progress > 0) { echo(($progress/$max)*100); } else { echo(0); } ?>%"></div>
                 </div>   
