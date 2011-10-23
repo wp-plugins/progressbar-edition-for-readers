@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 	Plugin Name: Progressbar (Edition for Readers)
 	Plugin URI: http://wordpress.org/extend/plugins/progressbar-edition-for-readers/
