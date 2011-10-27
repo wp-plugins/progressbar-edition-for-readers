@@ -3,7 +3,7 @@ Contributors: Paperthin.de
 Tags: progressbar, progress, tracker, bar, goal, graph, meter
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 0.3
+Stable tag: 0.4
 License: GPLv2 or later
 
 This plugin indicates progress made on books.
@@ -14,9 +14,10 @@ This plugin indicates progress made on books.
 
 Important: Your theme needs to support widgets to show the progressbar in the sidebar/widget area.
 
-Mayor features in Progressbar (Edition for Readers) 0.3 include:
+Mayor features in Progressbar (Edition for Readers) 0.4 include:
 
 * Added: The appearance of the progress bar can be changed in the options.
+* Added: Support for audiobooks and ebooks.
 * Improved: Progress can be saved in the widget options.
 * Improved: The new data model is completely free of redundancy.
 
@@ -31,6 +32,11 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 3. What it looks like
 
 == Changelog == 
+
+= 0.4 = 
+
+* Added: Support for audiobooks and ebooks.
+* Added: Special Thanks
 
 = 0.3 = 
 
@@ -54,3 +60,11 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 = How to change the appearance of the cover ? =
 
 Styling such as width, height,padding, background-color, etc., of the cover can be customized by adding the class .thumb in your css-file.
+
+== Special Thanks ==
+
+A big thank you goes out to @plueschsarg, because she is as she is.
+
+Special thanks to @bookexhibitionism, @methinksabout, @MortalBookshelf and @xCrini for their input during the development of this plugin. 
+
+Additional a big thanks to all the users, especially to @buchsaiten, @nina2null and @WhiteSences.

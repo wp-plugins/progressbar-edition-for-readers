@@ -55,8 +55,9 @@
         <div id="icon-edit-pages" class="icon32 icon32-posts-post"><br /></div>
         <h2>Vorschau</h2>
         <br />
-        <div id="progressbar">
-            <div style="width: 50%;"></div>
-        </div>
-    
+        <div style="width: 520px;">
+            <div id="progressbar">
+                <div style="width: 50%;"></div>
+            </div>
+    	</div>
 </div>
