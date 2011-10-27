@@ -67,4 +67,4 @@ A big thank you goes out to @plueschsarg, because she is as she is.
 
 Special thanks to @bookexhibitionism, @methinksabout, @MortalBookshelf and @xCrini for their input during the development of this plugin. 
 
-Additional a big thanks to all the users, especially to @buchsaiten, @nina2null and @WhiteSences.
+Additional a big thanks to all the users, especially to @buchsaiten, @ichbinkreativ, @nina2null and @WhiteSences.
