@@ -1,6 +1,8 @@
 === Progressbar (Edition for Readers) ===
 Contributors: Paperthin.de
 Tags: progressbar, progress, tracker, bar, goal, graph, meter, book, reading, ebook, kindle, books
+Author URI: http://paperthin.de/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SW5E4FK99NS6
 Requires at least: 3.0
 Tested up to: 3.2
 Stable tag: 0.4
