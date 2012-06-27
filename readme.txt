@@ -4,8 +4,8 @@ Tags: progressbar, progress, tracker, bar, goal, graph, meter, book, reading, eb
 Author URI: http://paperthin.de/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SW5E4FK99NS6
 Requires at least: 3.0
-Tested up to: 3.2
-Stable tag: 0.4
+Tested up to: 3.3.2
+Stable tag: 0.5
 License: GPLv2 or later
 
 This plugin indicates progress made on books.
@@ -16,12 +16,11 @@ This plugin indicates progress made on books.
 
 Important: Your theme needs to support widgets to show the progressbar in the sidebar/widget area.
 
-Mayor features in Progressbar (Edition for Readers) 0.4 include:
+Mayor features in Progressbar (Edition for Readers) 0.5 include:
 
-* Added: The appearance of the progress bar can be changed in the options.
-* Added: Support for audiobooks and ebooks.
-* Improved: Progress can be saved in the widget options.
-* Improved: The new data model is completely free of redundancy.
+* Added: Dashboard widget to provide an easier access to update the reading progress.
+* Added: Wordpress's Media-Upload to upload the cover image and insert it into the widget.
+* Added: Additional content can be added to the widget now. (e.g. the booklet text)
 
 == Installation ==
 
@@ -32,13 +31,25 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 1. Main settings
 2. Options in the widget area
 3. What it looks like
+4. Dashboard widget to change the progress of each widget.
 
 == Changelog == 
 
+= 0.5 =
+
+* Added: Dashboard widget to provide an easier access to update the reading progress.
+* Added: Wordpress's Media-Upload to upload the cover image and insert it into the widget.
+* Added: Additional content can be added to the widget now. (e.g. the booklet text)
+* Improved: Changed the image class to `progressbar-thumb` to avoid any changes to your theme files. (Change the layout in the file _style.php)
+* Improved: _config.php removed, used Wordpress Options API.
+
 = 0.4 = 
 
+* Added: The appearance of the progress bar can be changed in the options.
 * Added: Support for audiobooks and ebooks.
 * Added: Special Thanks
+* Improved: Progress can be saved in the widget options.
+* Improved: The new data model is completely free of redundancy.
 
 = 0.3 = 
 
@@ -57,11 +68,17 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 
 * Added: The progress is stored in a database table.
 
+== Upgrade Notice ==
+
+= 0.5 =
+
+* After upgrading to version 0.5 the plugin tries to delete the file _config.php. You may have to delete the file manually if the plugin does not have sufficient rights to delete the file.
+
 == Frequently Asked Questions ==
 
 = How to change the appearance of the cover ? =
 
-Styling such as width, height,padding, background-color, etc., of the cover can be customized by adding the class .thumb in your css-file.
+Styling such as width, height, padding, background-color, etc., of the cover can be customized by changing the class `.progressbar-thumb` in the file _style.php.
 
 == Special Thanks ==
 

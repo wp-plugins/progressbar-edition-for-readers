@@ -16,4 +16,9 @@
 		margin: 0;
 		padding: 0;
 	}
+
+	.progressbar-thumb {
+		width: 150px;
+	
+	}
 </style>

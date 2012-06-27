@@ -1,0 +1,41 @@
+#dashboard_progressbar p.sub,
+#dashboard_progressbar .table,
+#dashboard_progressbar .versions {
+	margin: -12px;
+}
+
+#dashboard_progressbar .inside {
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+#dashboard_progressbar p.sub {
+	padding: 5px 0 15px;
+	color: #8F8F8F;
+	font-size: 14px;
+	position: absolute;
+	top: -17px;
+	left: 15px;
+}
+
+#dashboard_progressbar p.manage {
+	border-top: #ECECEC 1px solid;
+	padding-top: 10px;
+}
+
+#dashboard_progressbar .table {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#dashboard_progressbar .table_content {
+	border-top: #ECECEC 1px solid;
+}
+
+a.add_media {
+	color: #777;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 1;
+}
