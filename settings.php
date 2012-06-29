@@ -52,6 +52,7 @@
 					$settings['progressbarColor'] = $_POST['progressbarColor'];
 					$settings['precision'] = $_POST['precision'];
 					$this->settings = $settings;
+					$this->save();
 			
 					echo "<div id='message' class='updated' style='width: 505px;'><p><b>Einstellungen wurden gespeichert.</b></p></div>";	
 				}
@@ -124,7 +125,7 @@
 		}
 		
 		public function save() {
-			update_option($optionName, $settings);
+			update_option($this->optionName, $this->settings);
 		}
 		
 		public function loadDefaults() {

@@ -5,7 +5,7 @@ Author URI: http://paperthin.de/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SW5E4FK99NS6
 Requires at least: 3.0
 Tested up to: 3.3.2
-Stable tag: 0.5
+Stable tag: 0.5.1
 License: GPLv2 or later
 
 This plugin indicates progress made on books.
