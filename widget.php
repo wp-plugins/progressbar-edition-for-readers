@@ -14,7 +14,7 @@
 		public $description = 'Ein Fortschrittsbalken';
 		
 		public $progressTitle = array('Keine Seite', 'eine Seite', ' Seiten');
-		public $progressLabel = 'Seite:';
+		public $progressLabel = 'Seite';
 		public $widgetTitle = 'Ich lese gerade';
 			
 		function singularPlural($amount, $list)
@@ -62,12 +62,12 @@
             <?php if($max) { ?>
             <p>
             	<div id="progressbar" style="margin: 0 auto;">
-                	<div style="width:<?php if($progress > 0) { echo(($progress/$max)*100); } else { echo(0); } ?>%"></div>
+                	<div style="width:<?php echo $this->currentProgress($progress, $max); ?>%"></div>
                 </div>   
             </p>
             
             <p style="text-align: center;">
-				<?php echo $progress; ?> von <?php echo $this->singularPlural($max, $this->progressTitle); ?> (<?php if($progress > 0) { echo(round(($progress/$max)*100,$precision)); } else { echo(0); } ?>%)
+<?php echo $this->currentPage($progress, $max); ?> von <?php echo $this->singularPlural($max, $this->progressTitle); ?> (<?php echo $this->currentProgress($progress, $max, $precision); ?>%)
             </p>
             
             <?php }
@@ -78,6 +78,17 @@
             <?php } ?>
             <?php echo $after_widget;
 		}
+                
+                function currentPage($progress, $max, $precision=0) {
+                    return $progress;
+                }
+                
+                function currentProgress($progress, $max, $precision=0) {
+                    if($progress > 0) {
+                        return round(($progress/$max)*100, $precision);
+                    }
+                    return 0;
+                }
 
 		function update( $new_instance, $old_instance ) {
 			$instance = $old_instance;
@@ -126,7 +137,7 @@
                 <input class="widefat" id="<?php echo $this->get_field_id('book'); ?>" name="<?php echo $this->get_field_name('book'); ?>" type="text" value="<?php echo $book; ?>" />
             </p>      
             <p>
-          		<label for="<?php echo $this->get_field_id('progress'); ?>"><?=$this->progressLabel; ?></label> 
+<label for="<?php echo $this->get_field_id('progress'); ?>"><?=$this->progressLabel; ?>:</label>
                 <input class="widefat" id="<?php echo $this->get_field_id('progress'); ?>" name="<?php echo $this->get_field_name('progress'); ?>" type="text" value="<?php echo $progress; ?>" /> von
                 <input class="widefat" id="<?php echo $this->get_field_id('max'); ?>" name="<?php echo $this->get_field_name('max'); ?>" type="text" value="<?php echo $max; ?>" />
             </p> 
@@ -150,14 +161,25 @@
 		public $description = 'Ein Fortschrittsbalken für Hörbücher';
 		
 		public $progressTitle = array('Keine Minute', 'eine Minute', ' Minuten');
-		public $progressLabel = 'Minute:';
+		public $progressLabel = 'Minute';
 		
 		public $widgetTitle = 'Ich h&ouml;re gerade';
 	}
+                
 	class ProgressbarEbooksWidget extends ProgressbarWidget {	
 		public $id_base = 'progressbar-ebook';
 		public $name = 'Progressbar (E-Book)';
 		public $description = 'Ein Fortschrittsbalken für E-Books';
+        
+		public $progressLabel = 'Prozent';
+        
+        function currentPage($progress, $max, $precision=0) {
+            return round($progress / 100 * $max, precision);
+        }
+        
+        function currentProgress($progress, $max, $precision=0) {
+            return $progress;
+        }
 	}
 	
 	class ProgressbarKindleWidget extends ProgressbarWidget {
@@ -166,7 +188,7 @@
 		public $description = 'Ein Fortschrittsbalken für Kindle (Locations)';
 		
 		public $progressTitle = array('Keine Location', 'eine Location', ' Locations');
-		public $progressLabel = 'Location:';
+		public $progressLabel = 'Location';
 	}
 	
 	// Initialize the widget manager.
