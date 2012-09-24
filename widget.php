@@ -174,7 +174,7 @@
 		public $progressLabel = 'Prozent';
         
         function currentPage($progress, $max, $precision=0) {
-            return round($progress / 100 * $max, precision);
+            return round($progress / 100 * $max, $precision);
         }
         
         function currentProgress($progress, $max, $precision=0) {
