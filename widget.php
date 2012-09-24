@@ -67,7 +67,7 @@
             </p>
             
             <p style="text-align: center;">
-<?php echo $this->currentPage($progress, $max); ?> von <?php echo $this->singularPlural($max, $this->progressTitle); ?> (<?php echo $this->currentProgress($progress, $max, $precision); ?>%)
+                <?php echo $this->currentPage($progress, $max); ?> von <?php echo $this->singularPlural($max, $this->progressTitle); ?> (<?php echo $this->currentProgress($progress, $max, $precision); ?>%)
             </p>
             
             <?php }
@@ -79,16 +79,16 @@
             <?php echo $after_widget;
 		}
                 
-                function currentPage($progress, $max, $precision=0) {
-                    return $progress;
-                }
+		function currentPage($progress, $max, $precision=0) {
+		    return $progress;
+		}
                 
-                function currentProgress($progress, $max, $precision=0) {
-                    if($progress > 0) {
-                        return round(($progress/$max)*100, $precision);
-                    }
-                    return 0;
-                }
+		function currentProgress($progress, $max, $precision=0) {
+		    if($progress > 0) {
+		        return round(($progress/$max)*100, $precision);
+		    }
+		    return 0;
+		}
 
 		function update( $new_instance, $old_instance ) {
 			$instance = $old_instance;
@@ -137,7 +137,7 @@
                 <input class="widefat" id="<?php echo $this->get_field_id('book'); ?>" name="<?php echo $this->get_field_name('book'); ?>" type="text" value="<?php echo $book; ?>" />
             </p>      
             <p>
-<label for="<?php echo $this->get_field_id('progress'); ?>"><?=$this->progressLabel; ?>:</label>
+		        <label for="<?php echo $this->get_field_id('progress'); ?>"><?=$this->progressLabel; ?>:</label>
                 <input class="widefat" id="<?php echo $this->get_field_id('progress'); ?>" name="<?php echo $this->get_field_name('progress'); ?>" type="text" value="<?php echo $progress; ?>" /> von
                 <input class="widefat" id="<?php echo $this->get_field_id('max'); ?>" name="<?php echo $this->get_field_name('max'); ?>" type="text" value="<?php echo $max; ?>" />
             </p> 
