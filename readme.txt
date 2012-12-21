@@ -4,8 +4,8 @@ Tags: progressbar, progress, tracker, bar, goal, graph, meter, book, reading, eb
 Author URI: http://paperthin.de/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SW5E4FK99NS6
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 0.5.3
+Tested up to: 3.5
+Stable tag: 0.6
 License: GPLv2 or later
 
 This plugin indicates progress made on books.
@@ -16,11 +16,10 @@ This plugin indicates progress made on books.
 
 Important: Your theme needs to support widgets to show the progressbar in the sidebar/widget area.
 
-Mayor features in Progressbar (Edition for Readers) 0.5 include:
+Major features in Progressbar (Edition for Readers) 0.6 include:
 
-* Added: Dashboard widget to provide an easier access to update the reading progress.
-* Added: Wordpress's Media-Upload to upload the cover image and insert it into the widget.
-* Added: Additional content can be added to the widget now. (e.g. the booklet text)
+
+* Added: Support for new WP 3.5 media library.
 
 == Installation ==
 
@@ -35,9 +34,22 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 
 == Changelog == 
 
+
+
+= 0.6 =
+
+
+
+* Added: Support for new WP 3.5 media library.
+
+
+
 = 0.5.2 =
 
+
+
 * Fixed: Restored ebook progress based on percentage.
+
 
 = 0.5 =
 

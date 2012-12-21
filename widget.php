@@ -2,7 +2,7 @@
 	class ProgressbarWidgetManager {
 		public function __construct() {
 			add_action('widgets_init',create_function('','register_widget("ProgressbarWidget");'));	
-			add_action('widgets_init',create_function('','register_widget("ProgressbarAudiobooksWidget");'));
+	        add_action('widgets_init',create_function('','register_widget("ProgressbarAudiobooksWidget");'));
 			add_action('widgets_init',create_function('','register_widget("ProgressbarEbooksWidget");'));	
 			add_action('widgets_init',create_function('','register_widget("ProgressbarKindleWidget");'));
 		}
@@ -143,7 +143,7 @@
             </p> 
             <p>
 				<label for="<?php echo $this->get_field_id('cover'); ?>"><?php _e('Link zum Cover:'); ?>
-                <a onClick="media_upload('<?=$this->get_field_id('cover');?>');" class="add_media" id="progressbarWidget">Upload/Insert <img src="images/media-button.png?ver=20111005" width="15" height="15" /></a>
+				<?php $this->addMediaButton($this->get_field_id('cover')); ?>
                 </label> 
                 <textarea name="<?php echo $this->get_field_name('cover'); ?>" id="<?=$this->get_field_id('cover');?>" class="widefat" rows="3" cols="15"><?php echo $cover; ?></textarea>
             </p> 
@@ -152,6 +152,19 @@
                 <textarea name="<?php echo $this->get_field_name('info'); ?>" id="<?php echo $this->get_field_id('info'); ?>" class="widefat" rows="3" cols="15"><?php echo $info; ?></textarea>
             </p>          
 			<?php 
+		}
+		
+		function addMediaButton($dataEditor) {
+			// we are using the new media library introduced with WP 3.5
+			// which needs at least one tinyMCE editor on the page.
+            if(function_exists( 'wp_enqueue_media' )){
+            	echo '<a onClick="media_upload(\'' . $dataEditor . '\')" class="button-secondary" title="Add Media" id="progressbar_add_media">Add Media</a>';
+				echo '<!-- add a dummy editor to have at least one tinyMCE editor on the page.';
+				wp_editor('','content');
+				echo '-->';
+            } else {
+            	echo '<a onClick="media_upload(\'' . $dataEditor . '\');" class="add_media" id="progressbarWidget">Upload/Insert <img src="images/media-button.png?ver=20111005" width="15" height="15" /></a>';
+            }
 		}
 	}
 	
