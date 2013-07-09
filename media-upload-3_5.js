@@ -1,5 +1,6 @@
 var mm_formField = "";
 function media_upload(fieldId) {
+
 	mm_formField = jQuery('#'+fieldId).attr('id');
 	var send_attachment_bkp = wp.media.editor.send.attachment;
 

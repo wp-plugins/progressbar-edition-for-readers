@@ -1,11 +1,11 @@
-=== Progressbar (Edition for Readers) ===
+=== Progress Bar (Edition for Readers) ===
 Contributors: Paperthin.de, iTux
 Tags: progressbar, progress, tracker, bar, goal, graph, meter, book, reading, ebook, kindle, books
 Author URI: http://paperthin.de/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SW5E4FK99NS6
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 0.6
+Stable tag: 0.7
 License: GPLv2 or later
 
 This plugin indicates progress made on books.
@@ -35,6 +35,10 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 == Changelog == 
 
 
+
+= 0.7 =
+
+* Fixed: Add new post thumbnails.
 
 = 0.6 =
 
