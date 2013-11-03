@@ -1,11 +1,11 @@
 === Progress Bar (Edition for Readers) ===
 Contributors: Paperthin.de, iTux
-Tags: progressbar, progress, tracker, bar, goal, graph, meter, book, reading, ebook, kindle, books
+Tags: progressbar, progress, tracker, bar, goal, graph, meter, book, reading, ebook, kindle, books, NaNoWriMo
 Author URI: http://paperthin.de/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SW5E4FK99NS6
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 0.7
+Tested up to: 3.7.1
+Stable tag: 0.8
 License: GPLv2 or later
 
 This plugin indicates progress made on books.
@@ -34,7 +34,9 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 
 == Changelog == 
 
+= 0.8 = 
 
+* Added: Support for NaNoWriMo.
 
 = 0.7 =
 
@@ -42,18 +44,11 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 
 = 0.6 =
 
-
-
 * Added: Support for new WP 3.5 media library.
-
-
 
 = 0.5.2 =
 
-
-
 * Fixed: Restored ebook progress based on percentage.
-
 
 = 0.5 =
 

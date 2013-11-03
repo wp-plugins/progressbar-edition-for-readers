@@ -5,6 +5,7 @@
 	        add_action('widgets_init',create_function('','register_widget("ProgressbarAudiobooksWidget");'));
 			add_action('widgets_init',create_function('','register_widget("ProgressbarEbooksWidget");'));	
 			add_action('widgets_init',create_function('','register_widget("ProgressbarKindleWidget");'));
+			add_action('widgets_init',create_function('','register_widget("ProgressbarNaNoWriMoWidget");'));
 		}
 	}
 	
@@ -202,6 +203,18 @@
 		
 		public $progressTitle = array('Keine Location', 'eine Location', ' Locations');
 		public $progressLabel = 'Location';
+	}
+	
+	
+	class ProgressbarNaNoWriMoWidget extends ProgressbarWidget {
+		public $id_base = 'progressbar-nanowrimo';
+		public $name = 'Progressbar (NaNoWiMo)';
+		public $description = 'Ein Fortschrittsbalken für den NaNoWriMo';
+		
+		public $progressTitle = array('Kein Wort', 'ein Wort', ' Wörter');
+		public $progressLabel = 'Wörter';
+		
+		public $widgetTitle = 'NaNoWriMo';
 	}
 	
 	// Initialize the widget manager.
