@@ -20,7 +20,7 @@
 						$value[$number]['progress'] = $configuration['progress'];
 					}
 					
-					if($configuration['book']) {
+					if(isset($configuration['book'])) {
 						$activeWidgets[$option . '-' . $number] = $configuration;
 					}
 				}
