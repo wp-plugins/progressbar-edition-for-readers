@@ -3,10 +3,10 @@
 	Plugin Name: Progressbar (Edition for Readers)
 	Plugin URI: http://wordpress.org/extend/plugins/progressbar-edition-for-readers/
 	Description: This plugin indicates progress made on books.
-	Version: 0.7
+	Version: 0.7.1
 	Author: Janine Große-Beck
 	Author URI: http://www.paperthin.de
-	Last Updated: 2013-07-09
+	Last Updated: 2015-08-08
 	License: GPLv2 or later
 
 	This program is free software; you can redistribute it and/or
