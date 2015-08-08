@@ -29,7 +29,7 @@
 		}
 		
 		function __construct() {
-			parent::WP_Widget($this->id_base, $this->name, array('description' => $this->description));
+			parent::__construct($this->id_base, $this->name, array('description' => $this->description));
 		}
 
 		function widget($args,$instance) {			
