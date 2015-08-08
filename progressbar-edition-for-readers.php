@@ -6,7 +6,7 @@
 	Version: 0.7
 	Author: Janine Große-Beck
 	Author URI: http://www.paperthin.de
-	Last Updated: 2013-07-09
+	Last Updated: 2015-07-06
 	License: GPLv2 or later
 
 	This program is free software; you can redistribute it and/or

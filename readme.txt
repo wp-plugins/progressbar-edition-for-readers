@@ -5,7 +5,7 @@ Author URI: http://paperthin.de/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SW5E4FK99NS6
 Requires at least: 3.0
 Tested up to: 3.7.1
-Stable tag: 0.8
+Stable tag: 0.7.1
 License: GPLv2 or later
 
 This plugin indicates progress made on books.
@@ -37,6 +37,10 @@ Upload the Progressbar (Edition for Readers) plugin to your blog and activate it
 = 0.8 = 
 
 * Added: Support for NaNoWriMo.
+
+= 0.7.1 = 
+
+* Fixed: The plugin is now compatible with Wordpress 4.3.
 
 = 0.7 =
 
